@@ -1,6 +1,5 @@
 import "./Player.css";
 export default function Player({ singlePlayer }) {
-  console.log(singlePlayer);
   return (
     <>
       <div className="player">
