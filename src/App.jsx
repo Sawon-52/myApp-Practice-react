@@ -3,6 +3,7 @@ import Todo from "./Todo";
 import Profile from "./Profile";
 import Actor from "./Actor";
 import Player from "./Player";
+import Counter from "./Counter";
 
 function App() {
   const actors = ["Shakib khan", "Jayed khan", "Bappi roy", "Salman Sha"];
@@ -22,20 +23,43 @@ function App() {
 
   return (
     <>
-      {cricketPlayers.map((player) => (
-        <Player singlePlayer={player}> </Player>
-      ))}
+      <div>
+        <h2>Props</h2>
+        <div className="player">
+          {cricketPlayers.map((player) => (
+            <Player singlePlayer={player}> </Player>
+          ))}
 
-      {actors.map((actor) => (
-        <Actor name={actor}></Actor>
-      ))}
+          {actors.map((actor) => (
+            <Actor name={actor}></Actor>
+          ))}
+        </div>
+      </div>
 
-      <Profile name="Mehedi Hasan" location="Rajshahi" age="23 years" />
-      <Profile name="Abdur Rahim" location="Dhaka" age="25 years" />
-      <Todo task="learn React " isDone={true}></Todo>
-      <Todo task="Explore core concepts" isDone={false}></Todo>
+      <div>
+        <h2>Props</h2>
+        <div className="profile">
+          <Profile name="Mehedi Hasan" location="Rajshahi" age="23 years" />
+          <Profile name="Abdur Rahim" location="Dhaka" age="25 years" />
+        </div>
+      </div>
 
-      <button onClick={() => handleClick("Clicked")}>Click Me</button>
+      <div className="todo">
+        <h2>Conditional Rendaring</h2>
+        <Todo task="learn React " isDone={true}></Todo>
+        <Todo task="Explore core concepts" isDone={false}></Todo>
+      </div>
+
+      {/* <button onClick={handleClick}>Click Me</button> */}
+      <div className="event">
+        <h2>Event</h2>
+        <button onClick={() => handleClick("Clicked")}>Click Me</button>
+      </div>
+
+      <div>
+        <h2>Component state</h2>
+        <Counter></Counter>
+      </div>
     </>
   );
 }

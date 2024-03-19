@@ -37,10 +37,11 @@
 // conditional rendering option 03 : || oparetor
 export default function Todo({ task, isDone }) {
   return (
-    <li>
-      {task}
-      {isDone || ": Do it"}
-    </li>
+    <div>
+      <li>
+        {task}
+        {isDone || ": Do it"}
+      </li>
+    </div>
   );
 }
-
