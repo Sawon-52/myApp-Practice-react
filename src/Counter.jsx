@@ -1,5 +1,6 @@
 import "./Counter.css";
 import { useState } from "react";
+
 export default function Counter() {
   const [count, setCounter] = useState(0);
 

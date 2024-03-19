@@ -34,7 +34,8 @@
 .todo,
 .profile,
 .player,
-.event {
+.event,
+.box {
   border: 3px solid black;
   padding: 10px;
   border-radius: 10px;

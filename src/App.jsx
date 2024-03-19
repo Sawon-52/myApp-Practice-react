@@ -4,6 +4,7 @@ import Profile from "./Profile";
 import Actor from "./Actor";
 import Player from "./Player";
 import Counter from "./Counter";
+import Users from "./Users";
 
 function App() {
   const actors = ["Shakib khan", "Jayed khan", "Bappi roy", "Salman Sha"];
@@ -23,6 +24,10 @@ function App() {
 
   return (
     <>
+      <div>
+        <h2>hlw</h2>
+        <Users></Users>
+      </div>
       <div>
         <h2>Props</h2>
         <div className="player">
