@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div>
-        <h2>hlw</h2>
+        <h2>Dynamicaly load data</h2>
         <Users></Users>
       </div>
       <div>
